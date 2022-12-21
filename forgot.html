@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PCVS | Reset Password</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="homebtn-container">
+            <a href="index.html" class="text-white"><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="inner">
+            <div class="container">
+                <div class="login-container">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="patient" style="width: 100%;"></a>
+                </div>
+                <div class="registerTitle">
+                    <h3>Forgot Password?</h3>
+                    <small>Type in email to reset the password.</small>
+                </div>
+                <form action="" method="POST" id=form>
+                    <div class="form-group">
+                        <label for="username">Email</label>
+                        <input type="Email" class="form-control" id="email" placeholder="email" required>
+                        <div class="invalid-feedback">
+                            Please fill in email.
+                        </div>
+                    </div>
+                    <br>
+                    <div class="loginbtn">
+                        <button id="submit" type="button" class="btn btn-dark" onclick="validateLogin()"><i class="fa fa-sign-in"></i> Submit</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function validateLogin(){
+            var email = document.getElementById("email").value;
+            //if input empty show an message
+            if(email == ""){
+                alert("Please fill in all the information");
+                    window.location = "forgot.html"
+            }
+            else{
+                alert("Please check the email to reset the password");
+                window.location = "login.html"
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
