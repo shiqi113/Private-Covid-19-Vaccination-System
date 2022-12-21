@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+.nav-img {
+   width: 80px;
+   height: 80px;
+   
+}
+.header{
+    width: 100%;
+}
+.wrapper {
+min-height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+align-items: center;
+background-color: #F76B1C;
+background-image: linear-gradient(1deg, #F76B1C 0%, #FAD961 100%);
+
+}
+.btn-login a{
+    border-style: none;
+    background-color: #F76B1C;
+    color: #fff;
+    width: 100px;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn-login a:hover{
+    border-style: solid;
+    color: #F76B1C;
+    border-color: #F76B1C;
+}
+.homebtn-container{
+    font-size: 40px;
+    padding: 5px;
+    border-style: none;
+    min-height: 100px;
+}
+.homebtn-container i:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+ }
+
+.inner {
+padding: 10px;
+background: #fff;
+max-width: 850px;
+margin: auto;
+display: flex;
+border-radius: 15px; 
+box-shadow: 10px 10px #333;
+
+}
+
+
+.inner .image-holder {
+    width: 50%;
+ }
+
+.image-holder{
+    margin: auto;
+    position: relative;
+    left: 70px;
+    
+}
+
+.registerTitle{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.registerImg{
+    transition: transform .2s;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.registerImg:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+.login-container{
+    width: 200%;
+    margin: auto;
+}
+.login-text{
+    text-align: center;
+}
+.login-text a{
+    text-decoration: none;
+    color: rgb(252, 176, 62) ;
+}
+.login-text a:hover{
+    color: rgb(0, 0, 0);
+}
+.loginbtn{
+   text-align: center;
+   
+}
+
+.nav-btn a{
+    text-decoration: none;
+    background-color: #F76B1C;
+}
+.nav-btn a:hover{
+    background-color: #F76B1C;
+}
+.acc-title{
+    text-align: center;
+}
+.acc-img{
+    text-align: center;
+    transition: transform .2s;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.acc-img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.vaccine{
+    background-image: url("../img/vaccine/search_map.png");
+    text-align: center;
+    max-width: 100%;
+    height: 450px;
+    padding-top: 150px;
+    font-family: "Monaco", Monospace;
+}
+
+.vacineTopic{
+    font-weight: bold;
+    font-size: 50px;
+    color:#58547e;
+}
+
+.vaccinePara{
+    color: #01cfbe;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.arrow-wave {
+display: inline-block;
+cursor: pointer;
+margin-top: 130px;
+font-size: 0;
+/*   background-color: rgba(100,100,100,0.4); */
+}
+
+.arrow-wave span {
+display: block;
+position: relative;
+height: 10px;
+width: 16px;
+/*   background-color: rgba(100,100,100,0.4); */
+opacity: 0.2;
+}
+
+.arrow-wave span::before,
+.arrow-wave span::after {
+display: block;
+content: "";
+position: absolute;
+height: 2px;
+width: 12px;
+background-color: #454545;
+}
+
+.arrow-wave span::before {
+top: -2px;
+left: 0;
+transform-origin: left center;
+transform: rotate(45deg);
+}
+
+.arrow-wave span::after {
+top: -2px;
+right: 0;
+transform-origin: right center;
+transform: rotate(-45deg);
+}
+
+.arrow-wave span:nth-child(1n) {
+animation: animate-arrow-wave 2s infinite;
+animation-delay: .25s;
+}
+.arrow-wave span:nth-child(2n) {
+animation: animate-arrow-wave 2s infinite;
+animation-delay: .50s;
+}
+
+.arrow-wave span:nth-child(3n) {
+animation: animate-arrow-wave 2s infinite;
+animation-delay: .75s;
+}
+.patient-card1 {
+	display: flex;
+	align-items: center;
+	min-height: 80vh;
+	justify-content: center;
+}
+  
+.patient-card1 .card-background{
+	background-color: #393939;
+	width: 380px;
+	height: 700px;
+	margin: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+	border: 3px solid #000000;
+	box-shadow: 5px 5px #000000;
+
+}
+
+.patient-card1 h1,
+.patient-card1 h2,
+.patient-card1 p {
+	margin: 0;
+	color: #eee;
+}
+
+.patient-card1 .half-background {
+	height: 30%;
+	background-color: #ffa339;
+}
+
+.patient-card1 .head {
+	display: flex;
+	justify-content: center;
+	padding: 25px 0;
+	text-align: center;
+	margin: 0 10px;
+	text-transform: uppercase;
+}
+
+.patient-card1 .head img {
+	width: 40px;
+}
+
+.patient-card11 .head > div p {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.patient-card1 .avatar {
+	position: absolute;
+	width: 40%;
+	left: 50%;
+	top: 100px;
+	transform: translate(-50%);
+	text-align: center;
+}
+
+.patient-card1 .img {
+	background-color: #ffffff;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 6px solid #393939;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.patient-card1 .img img {
+	width: 80%;
+	padding: 10px 0;
+}
+.info1{
+	margin-top: 100px;
+	color: #fff;
+	font-size: 13px;
+}
+.info1 ul{
+	list-style-type: none;
+}
+.bg-blue{
+	background-color: #FFB54B;
+	color: #fff;
+
+}  
+@keyframes animate-arrow-wave {
+    0%   { opacity: 0.2; }
+    25%  { opacity: 0.2; }
+    50%  { opacity: 0.2; }
+    75%  { opacity: 1.0; }
+    100% { opacity: 0.2; }
+}
+ 
+@media (max-width: 1199px) {
+    .wrapper {
+        background-position: right center; 
+    } 
+    .inner {
+        display: block; 
+        width: 90%;
+    }
+   
+    .image-holder{
+        margin-left: -40px;
+    }
+    
+}
+@media (max-width: 991px) {
+    .inner {
+        display: block; 
+        width: 90%;
+    }
+    .logincontainer {
+        display: block; 
+        width: 90%;
+    }
+    .image-holder{
+        margin-left: -15px;
+    }
+    
+}
+@media (max-width: 767px) {
+    .inner {
+        display: block; 
+        width: 90%;
+    }
+    
+    .inner .image-holder {
+        width: 100%; 
+    }
+    .image-holder{
+        margin-left: -20px;
+    }
+   
+}
+
+
